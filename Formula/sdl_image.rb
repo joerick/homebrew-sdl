@@ -36,7 +36,9 @@ class SdlImage < Formula
     system "./configure", "--prefix=#{prefix}",
                           "--disable-dependency-tracking",
                           "--disable-imageio",
-                          "--disable-sdltest"
+                          "--disable-sdltest",
+                          "--disable-png-shared",
+                          "--disable-jpg-shared"
     system "make", "install"
   end
 end
